@@ -1,0 +1,218 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Header */
+.header {
+    background-image: url('header-image.png');
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+}
+
+.language-btn {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #333;
+    padding: 5px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.language-btn img {
+    width: 10px;
+    margin-left: 5px;
+}
+
+button {
+    background-color: #e53909;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.header-content {
+    text-align: center;
+    margin: auto 0;
+}
+
+.header-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.header-content h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.header-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.email-signup {
+    display: flex;
+    justify-content: center;
+}
+
+.email-signup input {
+    padding: 10px;
+    font-size: 1em;
+    width: 300px;
+    border: none;
+}
+
+.email-signup button {
+    padding: 10px 20px;
+    font-size: 1em;
+}
+
+/* Features */
+.features {
+    padding: 50px 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.text-col {
+    flex: 1;
+    padding: 20px;
+}
+
+.text-col h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.img-col {
+    flex: 1;
+    text-align: center;
+}
+
+.img-col img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* FAQ */
+.faq {
+    padding: 50px 20px;
+    background-color: #111;
+}
+
+.faq h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.accordion {
+    list-style-type: none;
+}
+
+.accordion li {
+    margin-bottom: 10px;
+}
+
+.accordion input[type="radio"] {
+    display: none;
+}
+
+.accordion label {
+    display: block;
+    padding: 10px;
+    background-color: #333;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.accordion .content {
+    display: none;
+    padding: 10px;
+    background-color: #444;
+}
+
+.accordion input[type="radio"]:checked ~ .content {
+    display: block;
+}
+
+.accordion label::after {
+    content: '+';
+    float: right;
+}
+
+.accordion input[type="radio"]:checked ~ label::after {
+    content: '-';
+}
+
+/* Footer */
+.footer {
+    background-color: #111;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.footer h2 {
+    margin-bottom: 20px;
+}
+
+.footer .row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.footer .col {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer .col a {
+    display: block;
+    margin: 5px 0;
+}
+
+.footer button {
+    margin-top: 20px;
+}
+
+.footer p {
+    margin-top: 20px;
+    font-size: 0.8em;
+}
